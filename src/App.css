@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,54 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+.headers{
+  padding: 40px 20px;
+  background-color: #422057FF;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+
+.headers img{
+  width: 10%;
+  margin-right: 6px;
+  height: 100%;
+  justify-content: left;
+}
+
+.headers h2{
+  margin-right: auto;
+  color: #FCF6F5FF;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+
+.headers h4{
+  font-size: 12px;
+  font-weight: 400;
+
+}
+
+.navbar{
+  position: relative;
+}
+
+.navlinks{
+  display: none;
+  list-style: none;
+}
+
+.navlinks.show{
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-btn{
+  cursor: pointer;
+  display: block;
 }
