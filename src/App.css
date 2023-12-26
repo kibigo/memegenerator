@@ -80,9 +80,15 @@
 .navlinks.show{
   display: flex;
   flex-direction: column;
+  background-color: red;
+  width: 10%;
 }
 
 .toggle-btn{
   cursor: pointer;
   display: block;
+}
+
+.navicon{
+  margin-right: 10px;
 }
