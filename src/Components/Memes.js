@@ -3,8 +3,10 @@ import React, { useState } from "react";
 
 function Meme() {
 
-    const [randomIndex, setRandomIndex] = useState()
-    const [randomImage, setRandomImage] = useState('')
+   
+    const [randomImage, setRandomImage] = useState('https://img.freepik.com/free-vector/cute-cool-baby-holding-teddy-bear-doll-cartoon-vector-icon-illustration-people-holiday-isolated_138676-5356.jpg?size=626&ext=jpg')
+    const [topText, setTopText] = useState('')
+    const [bottomText, setBottomText] = useState('')
 
 
     const handleClick = (e) => {
@@ -13,7 +15,7 @@ function Meme() {
         .then((response) => response.json())
         .then((data) => {
             const index = Math.floor(Math.random() * data.length)
-            setRandomIndex(index)
+
             setRandomImage(data[index].url)
         })
         .catch((error) => {
@@ -47,8 +49,11 @@ function Meme() {
 
                 <button type="submit" className="form-button" onClick={handleClick}>Get a new meme image</button>
 
-                <p>Random Index: {randomIndex}</p>
-                <img src={randomImage}></img>
+
+                {randomImage ? 
+                <img src={randomImage} className="meme-image"></img>
+                : <h1>Image not found</h1>
+                 }
             </form>
         </div>
     )
