@@ -62,6 +62,7 @@
  
 }
 
+
 .headers h4{
   font-size: 12px;
   font-weight: 400;
@@ -91,4 +92,38 @@
 
 .navicon{
   margin-right: 10px;
+}
+
+/* STYLING THE FORM */
+
+.meme{
+  padding: 30px;
+}
+.form{
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 20px;
+}
+
+.form-label{
+  margin-bottom: 5px;
+}
+
+.form-input{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+  height: 35px;
+  width: 100%;
+}
+.form-button{
+  grid-column: 1 / -1;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 5px;
+  background: #422057FF;
+  color: #D5D4D8;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
 }
